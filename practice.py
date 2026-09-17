@@ -21,7 +21,7 @@ print (age + 5)
 birthdate=input ("enter your birthdate: ")
 right_age = 2020- int(birthdate)
 print (age)
-simple calculator
+# simple calculator
 first_nub= float(input ("give your first_nub: "))
 second_nub= float(input ("give your second_nub: "))
 print ("sum: " +str(first_nub + second_nub))
@@ -64,6 +64,7 @@ print( price >10)
 print (price >10 and price <40)
 print (price >30 or price <40)
 print ( not price >30)
+# if else statement
 temperature = 35
 if temperature >30: 
     print("its a hot day")
@@ -107,6 +108,7 @@ elif age > 50:
 else:
     print("please enter correct age")
 
+# while loop
 a = 2
 while a <= 50:
     print(a)
@@ -115,8 +117,82 @@ a = 3
 while a <= 15:
      print(a * "*")
      a += 1
+a = 1
+while a <= 5:
+    print (a)
+    a += 1
 
+# list
+names = ["john", "mosh", "sara", "adam"]
+print (names)
+names = ['sara', 'ali', 'mahad', 'john', 'robit' ]
+names [4] = "robt"
+print (names)
+names = ['sara', 'ali', 'mahad', 'john', 'robit' ]
+print (names [2])
+names = ['sara', 'ali', 'mahad', 'john', 'robit']
+print (names [1:4])
+names = ['sara', 'ali', 'mahad', 'john', 'robit']
+print (names [-3])
 
+# list methods
+nub = [1, 2, 3, 4, 5]
+nub.append (6)
+print (nub)
+nub = [1, 2, 3, 4]
+nub.remove (2)
+print (nub)
+nub = [2, 4, 6, 8, 10]
+nub.insert (2, 5)
+print (nub)
+nub = [2, 4, 6, 8, 10]
+nub.clear ()
+print (nub)
+nub = [2, 6, 9, 5, 0, 3]
+print ( 5 in nub)
+nub = [2, 5, 9, 8, 10, 3, 1, 7]
+print (len (nub))
 
+# forloop
+numbers = [1, 2, 3, 4]
+for items in numbers:
+    print (items)
 
+# another way using while loop
+numbers = [1, 2, 3, 4]
+i = 0
+while i < len(numbers):
+    print (numbers [i])
+    i += 1
+
+# the range () function
+nub = range (5)
+print (nub)
+nub = range (5)
+for numbers in nub:
+    print (numbers)
+nub = range (5, 10)
+for value in nub:
+    print (value)
+nub = range (5, 10, 3)
+for item in nub:
+    print (item)
+for nub in range (5, 10, 2):
+    print (nub)
+ #tuples
+numbers = (1, 2, 4, 5, 5)
+print (numbers.count (5))
+print (numbers.index(4))
+
+names = ["john", "adam", "jimmy", "peter"]
+i = 0
+while i <= 2:
+    print (names[i])
+    i += 1
+nub = [1, 10, 67, 50, 62, 23]
+i= nub[0] 
+for value in nub:
+    if value > i:
+        i = value
+print(i)
 
